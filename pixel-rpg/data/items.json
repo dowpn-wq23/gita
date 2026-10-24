@@ -1,0 +1,113 @@
+{
+  "potion_hp_s": {
+    "name": "붉은 약초즙", "type": "consumable", "icon": "item_potion_red", "rarity": "common",
+    "price": 30, "sell": 7, "stack": 99,
+    "use": { "hp": 250 },
+    "desc": "HP를 250 회복한다."
+  },
+  "potion_hp_m": {
+    "name": "진한 약초즙", "type": "consumable", "icon": "item_potion_red_big", "rarity": "common",
+    "price": 120, "sell": 30, "stack": 99,
+    "use": { "hp": 750 },
+    "desc": "HP를 750 회복한다."
+  },
+  "potion_mp_s": {
+    "name": "푸른 이슬병", "type": "consumable", "icon": "item_potion_blue", "rarity": "common",
+    "price": 40, "sell": 10, "stack": 99,
+    "use": { "mp": 120 },
+    "desc": "MP를 120 회복한다."
+  },
+  "scroll_exp": {
+    "name": "현자의 두루마리", "type": "consumable", "icon": "item_scroll", "rarity": "rare",
+    "price": 300, "sell": 60, "stack": 20,
+    "use": { "buff": "exp_up" },
+    "desc": "10분간 획득 경험치가 50% 증가한다."
+  },
+  "elixir_hawk": {
+    "name": "매의 눈 영약", "type": "consumable", "icon": "item_elixir", "rarity": "rare",
+    "price": 260, "sell": 50, "stack": 20,
+    "use": { "buff": "crit_up" },
+    "desc": "5분간 치명타 확률이 10% 증가한다."
+  },
+
+  "fist_wraps": {
+    "name": "수련용 손붕대", "type": "equipment", "slot": "weapon", "weaponType": "fist", "icon": "item_wraps", "rarity": "common",
+    "price": 100, "sell": 20, "reqLevel": 1,
+    "stats": { "atk": 8 },
+    "desc": "초보 무도가가 주먹을 보호하려고 감는 천."
+  },
+  "iron_knuckle": {
+    "name": "무쇠 너클", "type": "equipment", "slot": "weapon", "weaponType": "fist", "icon": "item_knuckle", "rarity": "common",
+    "price": 600, "sell": 150, "reqLevel": 2,
+    "stats": { "atk": 24 },
+    "desc": "투박하지만 묵직한 한 방을 보장하는 쇠 너클."
+  },
+  "tiger_claw": {
+    "name": "범발톱 권갑", "type": "equipment", "slot": "weapon", "weaponType": "fist", "icon": "item_claw", "rarity": "rare",
+    "price": 2400, "sell": 600, "reqLevel": 5,
+    "stats": { "atk": 46, "crit": 0.04 },
+    "desc": "맹수의 발톱을 본떠 만든 권갑. 급소를 노리기 쉽다."
+  },
+  "tide_gauntlet": {
+    "name": "해명의 권갑", "type": "equipment", "slot": "weapon", "weaponType": "fist", "icon": "item_gauntlet", "rarity": "epic",
+    "price": 0, "sell": 1800, "reqLevel": 7,
+    "stats": { "atk": 78, "crit": 0.06, "deadly": 0.05 },
+    "desc": "성소 수호자가 지니던 권갑. 파도 소리가 들린다."
+  },
+  "cloth_gi": {
+    "name": "수련 도복", "type": "equipment", "slot": "armor", "icon": "item_gi", "rarity": "common",
+    "price": 120, "sell": 25, "reqLevel": 1,
+    "stats": { "def": 6, "maxHp": 40 },
+    "desc": "질긴 무명으로 지은 기본 도복."
+  },
+  "leather_vest": {
+    "name": "질긴 가죽 조끼", "type": "equipment", "slot": "armor", "icon": "item_vest", "rarity": "common",
+    "price": 800, "sell": 200, "reqLevel": 3,
+    "stats": { "def": 16, "maxHp": 130 },
+    "desc": "거북 가죽을 덧댄 조끼. 가볍고 튼튼하다."
+  },
+  "scale_robe": {
+    "name": "비늘 도복", "type": "equipment", "slot": "armor", "icon": "item_robe", "rarity": "rare",
+    "price": 2600, "sell": 650, "reqLevel": 6,
+    "stats": { "def": 32, "maxHp": 320, "maxMp": 40 },
+    "desc": "물고기 비늘을 엮어 만든 도복. 몸놀림을 해치지 않는다."
+  },
+  "jade_ring": {
+    "name": "비취 반지", "type": "equipment", "slot": "accessory", "icon": "item_ring", "rarity": "common",
+    "price": 900, "sell": 220, "reqLevel": 2,
+    "stats": { "crit": 0.03, "maxMp": 40 },
+    "desc": "맑은 비취가 박힌 반지. 정신을 맑게 한다."
+  },
+  "bog_charm": {
+    "name": "늪지기의 부적", "type": "equipment", "slot": "accessory", "icon": "item_charm", "rarity": "rare",
+    "price": 0, "sell": 700, "reqLevel": 3,
+    "stats": { "atk": 15, "maxHp": 150, "crit": 0.03 },
+    "desc": "늪지기 바르곤의 뿔 조각으로 만든 부적."
+  },
+
+  "jelly_gel": {
+    "name": "말랑한 점액", "type": "material", "icon": "item_gel", "rarity": "common",
+    "price": 0, "sell": 6, "stack": 99,
+    "desc": "물방울 젤리가 남긴 점액. 상점에 팔 수 있다."
+  },
+  "turtle_shell": {
+    "name": "가시 등껍질 조각", "type": "material", "icon": "item_shell", "rarity": "common",
+    "price": 0, "sell": 15, "stack": 99,
+    "desc": "단단한 등껍질 조각. 상점에 팔 수 있다."
+  },
+  "bat_wing": {
+    "name": "그림자 날개막", "type": "material", "icon": "item_wing", "rarity": "common",
+    "price": 0, "sell": 18, "stack": 99,
+    "desc": "빛을 흡수하는 얇은 날개막."
+  },
+  "rune_shard": {
+    "name": "룬석 파편", "type": "material", "icon": "item_rune", "rarity": "common",
+    "price": 0, "sell": 28, "stack": 99,
+    "desc": "희미하게 빛나는 룬이 새겨진 돌 조각."
+  },
+  "guardian_core": {
+    "name": "수호의 핵", "type": "material", "icon": "item_core", "rarity": "epic",
+    "price": 0, "sell": 400, "stack": 99,
+    "desc": "정예 몬스터의 심장부에서 나온 결정. 비싸게 팔린다."
+  }
+}

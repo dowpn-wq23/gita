@@ -1,0 +1,31 @@
+{
+  "npcs": {
+    "merchant": {
+      "name": "잡화상 토비", "title": "상점", "sprite": "npc_merchant", "role": "shop", "shop": "general_store",
+      "lines": ["어서 와! 모험에 필요한 건 다 있다고.", "주운 잡동사니도 값을 쳐 주지."]
+    },
+    "healer": {
+      "name": "치유사 아린", "title": "회복", "sprite": "npc_healer", "role": "heal",
+      "lines": ["다친 곳은 없나요? 별빛의 축복으로 치료해 드릴게요."],
+      "healedLine": "HP와 MP가 모두 회복되었어요. 몸조심하세요!"
+    },
+    "guard": {
+      "name": "경비대장 로크", "title": "안내", "sprite": "npc_guard", "role": "talk",
+      "lines": [
+        "동쪽 길을 따라가면 '이끼 낀 수로 유적'이 나온다. 젤리와 거북이 우글거리지.",
+        "유적 북동쪽 단상엔 정예 몬스터 '늪지기 바르곤'이 산다. 바닥이 빛나면 피해라!",
+        "더 강해지면 유적 동쪽 끝의 '가라앉은 성소'에 도전해 봐."
+      ]
+    }
+  },
+  "shops": {
+    "general_store": {
+      "name": "토비의 잡화점",
+      "items": ["potion_hp_s", "potion_hp_m", "potion_mp_s", "scroll_exp", "elixir_hawk", "iron_knuckle", "tiger_claw", "leather_vest", "scale_robe", "jade_ring"]
+    },
+    "field_supply": {
+      "name": "휴대 보급함",
+      "items": ["potion_hp_s", "potion_hp_m", "potion_mp_s"]
+    }
+  }
+}

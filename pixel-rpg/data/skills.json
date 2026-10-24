@@ -1,0 +1,124 @@
+{
+  "monk_flurry": {
+    "name": "연환권",
+    "classId": "monk",
+    "icon": "skill_flurry",
+    "reqLevel": 1,
+    "maxLevel": 10,
+    "type": "melee",
+    "cooldown": 3.5,
+    "mpCost": 10,
+    "mpPerLevel": 1,
+    "chargeGain": 1,
+    "hits": 5,
+    "hitInterval": 0.07,
+    "range": 110,
+    "arc": 110,
+    "lunge": 46,
+    "damage": {
+      "base": 0.55,
+      "perLevel": 0.06
+    },
+    "effect": "flurry",
+    "desc": "앞으로 파고들며 눈에 보이지 않는 속도로 주먹을 5회 내지른다. 기(氣) 1 충전."
+  },
+  "monk_whirl": {
+    "name": "선풍각",
+    "classId": "monk",
+    "icon": "skill_whirl",
+    "reqLevel": 2,
+    "maxLevel": 10,
+    "type": "aoe",
+    "cooldown": 7,
+    "mpCost": 18,
+    "mpPerLevel": 1,
+    "chargeGain": 1,
+    "hits": 3,
+    "hitInterval": 0.12,
+    "radius": 140,
+    "knockback": 40,
+    "damage": {
+      "base": 0.8,
+      "perLevel": 0.08
+    },
+    "effect": "whirl",
+    "desc": "몸을 회전시키며 주변의 모든 적을 3회 걷어찬다. 적을 밀쳐낸다."
+  },
+  "monk_flame": {
+    "name": "열화각",
+    "classId": "monk",
+    "icon": "skill_flame",
+    "reqLevel": 3,
+    "maxLevel": 10,
+    "type": "cone",
+    "cooldown": 9,
+    "mpCost": 24,
+    "mpPerLevel": 2,
+    "chargeGain": 1,
+    "hits": 2,
+    "hitInterval": 0.15,
+    "range": 230,
+    "arc": 70,
+    "damage": {
+      "base": 1.6,
+      "perLevel": 0.15
+    },
+    "burn": {
+      "ticks": 6,
+      "interval": 0.5,
+      "base": 0.18,
+      "perLevel": 0.02
+    },
+    "effect": "flame",
+    "desc": "기를 불꽃으로 바꿔 전방 부채꼴로 차올린다. 맞은 적은 3초간 화상 피해를 입는다."
+  },
+  "monk_aura": {
+    "name": "투기해방",
+    "classId": "monk",
+    "icon": "skill_aura",
+    "reqLevel": 5,
+    "maxLevel": 10,
+    "type": "buff",
+    "cooldown": 45,
+    "mpCost": 30,
+    "mpPerLevel": 2,
+    "chargeGain": 2,
+    "buff": {
+      "id": "battle_aura",
+      "duration": 30,
+      "atkPct": {
+        "base": 0.15,
+        "perLevel": 0.02
+      },
+      "crit": {
+        "base": 0.1,
+        "perLevel": 0.01
+      }
+    },
+    "effect": "aura",
+    "desc": "잠재된 투기를 해방해 일정 시간 공격력과 치명타 확률이 상승한다. 기(氣) 2 충전."
+  },
+  "monk_heavenfall": {
+    "name": "천붕격",
+    "classId": "monk",
+    "icon": "skill_heavenfall",
+    "reqLevel": 7,
+    "maxLevel": 10,
+    "type": "finisher",
+    "cooldown": 12,
+    "mpCost": 30,
+    "mpPerLevel": 2,
+    "chargeCost": 3,
+    "consumeAllCharge": true,
+    "hits": 1,
+    "range": 90,
+    "radius": 170,
+    "damage": {
+      "base": 1.4,
+      "perLevel": 0.12
+    },
+    "perCharge": true,
+    "effect": "quake",
+    "desc": "모은 기(氣)를 모두 소모해 대지를 내려친다. 소모한 기 1개당 피해가 증가한다. (기 3개 이상 필요)"
+  }
+}

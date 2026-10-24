@@ -1,0 +1,84 @@
+{
+  "monk": {
+    "name": "무도가",
+    "implemented": true,
+    "weaponType": "fist",
+    "description": "맨주먹과 권갑으로 싸우는 근접 격투가. 빠른 연타로 기(氣)를 모아 강력한 마무리 기술을 펼친다.",
+    "sprite": "player_monk",
+    "portrait": "portrait_monk",
+    "base": {
+      "maxHp": 520,
+      "maxMp": 160,
+      "atk": 62,
+      "def": 18,
+      "crit": 0.12,
+      "critDmg": 1.6,
+      "deadly": 0.2,
+      "deadlyDmg": 2.4,
+      "moveSpeed": 230,
+      "attackInterval": 0.26,
+      "hpRegen": 4,
+      "mpRegen": 2.5
+    },
+    "growth": { "maxHp": 58, "maxMp": 12, "atk": 9, "def": 3, "crit": 0.002 },
+    "basicAttack": {
+      "range": 74,
+      "acquireRange": 340,
+      "combo": [1.0, 0.9, 1.05, 1.5],
+      "chargeEvery": 2,
+      "effect": "punch"
+    },
+    "skills": ["monk_flurry", "monk_whirl", "monk_flame", "monk_aura", "monk_heavenfall"],
+    "startSkills": { "monk_flurry": 1 },
+    "startEquipment": { "weapon": "fist_wraps", "armor": "cloth_gi" },
+    "startItems": [
+      { "id": "potion_hp_s", "qty": 8 },
+      { "id": "potion_mp_s", "qty": 4 }
+    ]
+  },
+  "warrior": {
+    "name": "전사",
+    "implemented": false,
+    "weaponType": "sword",
+    "description": "(2단계 예정) 대검과 방패로 전선을 지키는 근접 탱커.",
+    "sprite": "player_warrior",
+    "portrait": "portrait_warrior",
+    "base": { "maxHp": 640, "maxMp": 120, "atk": 58, "def": 26, "crit": 0.08, "critDmg": 1.6, "deadly": 0.15, "deadlyDmg": 2.2, "moveSpeed": 215, "attackInterval": 0.42, "hpRegen": 5, "mpRegen": 2 },
+    "growth": { "maxHp": 72, "maxMp": 9, "atk": 8, "def": 4, "crit": 0.001 },
+    "basicAttack": { "range": 90, "acquireRange": 340, "combo": [1.0, 1.1, 1.6], "chargeEvery": 2, "effect": "slash" },
+    "skills": [],
+    "startSkills": {},
+    "startEquipment": {},
+    "startItems": []
+  },
+  "ranger": {
+    "name": "레인저",
+    "implemented": false,
+    "weaponType": "bow",
+    "description": "(2단계 예정) 활로 원거리에서 적을 꿰뚫는 사수.",
+    "sprite": "player_ranger",
+    "portrait": "portrait_ranger",
+    "base": { "maxHp": 460, "maxMp": 150, "atk": 60, "def": 14, "crit": 0.15, "critDmg": 1.7, "deadly": 0.2, "deadlyDmg": 2.4, "moveSpeed": 240, "attackInterval": 0.38, "hpRegen": 3.5, "mpRegen": 2.5 },
+    "growth": { "maxHp": 50, "maxMp": 11, "atk": 9, "def": 2, "crit": 0.002 },
+    "basicAttack": { "range": 360, "acquireRange": 420, "combo": [1.0], "chargeEvery": 3, "effect": "arrow", "projectile": true },
+    "skills": [],
+    "startSkills": {},
+    "startEquipment": {},
+    "startItems": []
+  },
+  "mage": {
+    "name": "마법사",
+    "implemented": false,
+    "weaponType": "staff",
+    "description": "(2단계 예정) 원소 마법으로 넓은 범위를 제압하는 술사.",
+    "sprite": "player_mage",
+    "portrait": "portrait_mage",
+    "base": { "maxHp": 420, "maxMp": 240, "atk": 66, "def": 12, "crit": 0.1, "critDmg": 1.6, "deadly": 0.18, "deadlyDmg": 2.5, "moveSpeed": 220, "attackInterval": 0.5, "hpRegen": 3, "mpRegen": 4 },
+    "growth": { "maxHp": 44, "maxMp": 18, "atk": 10, "def": 2, "crit": 0.001 },
+    "basicAttack": { "range": 320, "acquireRange": 400, "combo": [1.0], "chargeEvery": 2, "effect": "bolt", "projectile": true },
+    "skills": [],
+    "startSkills": {},
+    "startEquipment": {},
+    "startItems": []
+  }
+}

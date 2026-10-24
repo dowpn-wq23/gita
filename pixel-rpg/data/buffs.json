@@ -1,0 +1,6 @@
+{
+  "exp_up": { "name": "경험치 증가", "icon": "buff_exp", "duration": 600, "stats": { "expPct": 0.5 } },
+  "crit_up": { "name": "치명타 증가", "icon": "buff_crit", "duration": 300, "stats": { "crit": 0.1 } },
+  "battle_aura": { "name": "투기해방", "icon": "buff_aura", "duration": 30, "stats": {} },
+  "newbie": { "name": "새싹의 가호", "icon": "buff_newbie", "duration": -1, "maxLevel": 10, "stats": { "expPct": 0.2 } }
+}

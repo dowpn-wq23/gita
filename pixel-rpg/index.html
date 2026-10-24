@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0b0812">
+  <title>별빛 대륙 — Starlight Realm</title>
+  <link rel="stylesheet" href="fonts/galmuri.css">
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: #0b0812; overflow: hidden;
+      touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+    #game { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+    #game canvas { image-rendering: pixelated; image-rendering: crisp-edges; }
+    #boot { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; color: #cfc6e6;
+      font-family: 'Galmuri11', sans-serif; font-size: 16px; letter-spacing: 1px; pointer-events: none; }
+    #rotate { display: none; position: fixed; inset: 0; background: #0b0812; color: #fff; z-index: 10;
+      align-items: center; justify-content: center; text-align: center; font-family: 'Galmuri11', sans-serif; font-size: 18px; line-height: 1.8; }
+    @media (orientation: portrait) and (max-width: 900px) { #rotate { display: flex; } }
+  </style>
+</head>
+<body>
+  <div id="boot">불러오는 중…</div>
+  <div id="game"></div>
+  <div id="rotate">📱 화면을 가로로 돌려 주세요<br><small>가로 화면 전용 게임입니다</small></div>
+
+  <!-- 엔진 (오프라인 실행을 위해 로컬 포함) -->
+  <script src="lib/phaser.min.js"></script>
+  <!-- 데이터 묶음 (file:// 실행용. http 실행 시에는 data/*.json 을 직접 읽음) -->
+  <script src="data/bundle.js"></script>
+
+  <!-- systems -->
+  <script src="systems/Core.js"></script>
+  <script src="systems/DataStore.js"></script>
+  <script src="systems/PixelPainter.js"></script>
+  <script src="systems/PlaceholderArt.js"></script>
+  <script src="systems/AssetManifest.js"></script>
+  <script src="systems/Sound.js"></script>
+  <script src="systems/SaveSystem.js"></script>
+  <script src="systems/PlayerState.js"></script>
+  <script src="systems/Combat.js"></script>
+  <script src="systems/InputState.js"></script>
+  <script src="systems/MapBuilder.js"></script>
+  <script src="systems/Effects.js"></script>
+  <script src="systems/SkillSystem.js"></script>
+  <script src="systems/SpawnSystem.js"></script>
+
+  <!-- entities -->
+  <script src="entities/Player.js"></script>
+  <script src="entities/Pet.js"></script>
+  <script src="entities/Monster.js"></script>
+  <script src="entities/Npc.js"></script>
+  <script src="entities/Drop.js"></script>
+  <script src="entities/Decor.js"></script>
+
+  <!-- ui -->
+  <script src="ui/Widgets.js"></script>
+  <script src="ui/HUD.js"></script>
+  <script src="ui/Controls.js"></script>
+  <script src="ui/MessageLog.js"></script>
+  <script src="ui/Panels.js"></script>
+  <script src="ui/InventoryPanel.js"></script>
+  <script src="ui/SkillPanel.js"></script>
+  <script src="ui/ShopPanel.js"></script>
+  <script src="ui/MapPanel.js"></script>
+  <script src="ui/MiscPanels.js"></script>
+
+  <!-- scenes -->
+  <script src="scenes/BootScene.js"></script>
+  <script src="scenes/TitleScene.js"></script>
+  <script src="scenes/GameScene.js"></script>
+  <script src="scenes/UIScene.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>

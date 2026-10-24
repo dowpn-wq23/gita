@@ -1,0 +1,30 @@
+{
+  "title": "별빛 대륙",
+  "subtitle": "Starlight Realm",
+  "width": 1280,
+  "height": 576,
+  "pixelScale": 3,
+  "tileSize": 48,
+  "saveKey": "starlight_realm_save_v1",
+  "autosaveSeconds": 10,
+  "startMap": "town",
+  "startClass": "monk",
+  "maxLevel": 60,
+  "exp": { "base": 100, "exponent": 1.75 },
+  "levelUp": { "skillPoints": 1, "fullHeal": true },
+  "startSkillPoints": 1,
+  "inventorySlots": 30,
+  "charge": { "max": 6 },
+  "combat": {
+    "defenseConstant": 100,
+    "damageVariance": 0.1,
+    "outOfCombatSeconds": 5,
+    "hitStopMs": 40,
+    "stackWindowMs": 450
+  },
+  "dash": { "cooldown": 1.2, "distance": 170, "duration": 0.18, "invulnerable": 0.32 },
+  "pickupRadius": 110,
+  "monsterLeashRange": 520,
+  "death": { "reviveHpRatio": 0.5, "expPenaltyRatio": 0.0 },
+  "dailyReward": { "gold": 500, "items": [{ "id": "potion_hp_s", "qty": 5 }, { "id": "scroll_exp", "qty": 1 }] }
+}
